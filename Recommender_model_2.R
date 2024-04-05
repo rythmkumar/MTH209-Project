@@ -46,7 +46,7 @@ dat %>% ggplot(aes(PC1,PC2,color = factor(clusters)))+
   geom_point()
 
 
-track_name = stri_encode(data$track_name, to = "ASCII")
+data$track_name = stri_encode(data$track_name, to = "ASCII")
 
 check_song <- function(song_name, v) {
   # Convert both song_name and vector v to lowercase for case-insensitive comparison
