@@ -19,7 +19,7 @@ X5 = X4[c(3:10)]
 d = dist(X5, method = "euclidean")
 
 #clustering using hierarchical clustering
-fhc <- hclust(d)
+hc <- hclust(d)
 # EDA 
 
 plot(hc, cex = 0.6) 
